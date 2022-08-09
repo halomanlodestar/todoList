@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(to right, #20A4F3    , #2234AE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 5px;
+}
+
+#SideMenu {
+    border-radius: 20px;
+
+    width: 270px;
+    height: 530px;
+    
+    position: relative;
+    left: 77%;
+    top: -15px;
+    
+    background: rgba(44, 44, 44, 0.6);
+}
+
+#userInfoTitle {
+    font-family: righteous;
+    color: rgb(211, 214, 216);
+
+    position: relative;
+
+    top: 15px;
+    left: 24%;
+
+    padding: 0px;
+}
+
+#line {
+    color: aliceblue;
+
+    position: relative;
+
+    top: -15px;
+    left: 7%;
+}
+
+#LoginMenu {
+    width: auto;
+    height: 60%;
+
+    position: relative;
+
+    top: 10px;
+
+    margin: 10px;
+}
+
+.inputField {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom: solid;
+    border-bottom-color: rgb(255, 169, 138);
+
+    width: 78%;
+    height: 25px;
+
+    padding: 0px;
+
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+.outField:focus-within {
+    border-color: transparent;
+}
+
+.outField::after {
+    content: "";
+    display: block;
+
+    height: 3px;
+    width: 78%;
+
+    position: relative;
+
+    top: -38px;
+    left: 25px;
+    
+    background-color: deeppink;
+    transform: scaleX(0);
+    transform-origin: 0%;
+    transition: transform 500ms ease;
+}
+
+.outField:focus-within::after {
+    transform: scaleX(1);
+}
+
+.inputLabel {
+    z-index: -1;
+    color: aquamarine;
+    font-family: 'Comfortaa', cursive;
+
+    position: absolute;
+
+    left: 25px;
+
+    transform: translateY(2px);
+    transform-origin: 0%;
+    transition: transform 400ms;
+}
+
+#email {
+    position: relative;
+
+    top: 25px;
+}
+
+#password {
+    position: relative;
+
+    top: 25px;
+}
+
+.outField:focus-within .inputLabel,
+.inputField:not(:placeholder-shown) + .inputLabel {
+    transform: scale(0.8) translateY(-1rem);
+}
+
+#email:valid {
+    color: lawngreen;
+}
+
+#email:invalid {
+    color: orangered;
+}
+
+#submit {
+    border: none;
+    border-radius: 20px;
+
+    height: 35px;
+    width: 180px;
+
+    position: relative;
+
+    left: 13%;
+    top: 25px;
+
+
+    background: linear-gradient(to left, aqua, seagreen);
+}
+
+#alterLink {
+    position: relative;
+
+    bottom: -50px;
+    left: 10%;
+}
+
+.links {
+    border: none;
+    color: chocolate;
+    
+    background: transparent;
+}
