@@ -6,6 +6,26 @@ body {
     margin: 0px;
 }
 
+dt {
+    font-family: consolas;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 15px;
+
+    width: auto;
+    height: 100px;
+
+    margin: 20px;
+
+    padding-left: 15px;
+    padding-top: 1px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #title {
     font-family: cursive;
     font-size: 30px;
@@ -22,26 +42,34 @@ body {
 }
 
 #SideMenu {
+    float: left;
 
     width: 270px;
     height: 490px;
     
     left: 77%;
+    top: 22px;
 }
 
 #userInfoTitle {
-    font-family: righteous;
-    color: rgb(211, 214, 216);
-
-    position: relative;
-
+    float: left;
     top: 15px;
     left: 24%;
 
     padding: 0px;
 }
 
+#taskTitle {
+    position: relative;
+
+    left: 35px;
+    top: -5px;
+}
+
 #line {
+    display: flex;
+    flex-shrink: 20px;
+    float: left;
     color: aliceblue;
 
     position: relative;
@@ -50,6 +78,15 @@ body {
     left: 7%;
 }
 
+#lineT {
+    color: aliceblue;
+
+    position: relative;
+
+    top: -30px;
+    left: 3%;
+}
+ 
 #LoginMenu {
     width: auto;
     height: 60%;
@@ -60,6 +97,7 @@ body {
 }
 
 #ListArea {
+    display: flexbox;
     width: 73.5%;
     height: 490px;
     float: right;;
@@ -70,6 +108,13 @@ body {
     padding: 0px;
 
     margin: 0px;
+}
+
+.subTitles {
+    font-family: righteous;
+    color: rgb(211, 214, 216);
+
+    position: relative;
 }
 
 .menus {
