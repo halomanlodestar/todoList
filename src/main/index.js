@@ -1,46 +1,22 @@
 // Link Activity
 
-let joinType = `log`;
+let Registered = true;
+let LoggedIn = false;
 
 document.getElementById(`switch`).onclick = () => {
-    if (joinType == `log`) {
-        joinType = `sign`;
-        console.log(joinType);
+    if (Registered == true) {
+        Registered = false;
+        console.log(`is Registered : ${Registered}`);
     }
-    else if (joinType == `sign`) {
-        joinType = `log`;
-        console.log(joinType);
+    else if (Registered == false) {
+        Registered = true;
+        console.log(`is Registered : ${Registered}`);
     }
 };
 
-// Data Bases Management 
-
-const mysql = require(`mysql2`);
-
-const cn = mysql.createConnection({
-    host: `localhost`,
-    user: `root`,
-    password: `admin`,
-    database: `web`
-})
-
-document.querySelector(`#testBtn`).onclick = () => {
-    cn.query(`show tables`,(err, out) => {
-        if(err) throw err;
-        console.log(out);
-    })
+if (LoggedIn) {
+    document.getElementById(`LoginMenu`).style.visibility = `hidden`;
 }
-
-document.querySelector(`#submit`).onclick = () => {
-    if (joinType == `log`) {
-        cn.query(`show tables`,(err, out) => {
-            if(err) throw err;
-            console.log(out);
-        })
-    }
-    else if (joinType == `sign`) {
-
-    }
-
+else {
+    document.getElementById(`LoginMenu`).style.visibility = ``;
 }
-
