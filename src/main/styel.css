@@ -7,11 +7,12 @@ body {
 }
 
 dt {
-    font-family: consolas;
-    font-size: 25px;
+    font-family: 'Space Grotesk', sans-serif, Teko;
+    font-size: 23px;
     color: rgba(240, 248, 255, 0.902);
-    background: linear-gradient(to right,rgba(0, 128, 0, 0.9), rgba(0, 0, 0, 0.123));
+    background: linear-gradient(to right,rgba(0, 100, 0, 0.9), rgba(0, 0, 0, 0.123));
     border-radius: 3px;
+    box-shadow: 10px 10px 40px rgb(0, 0, 0);
 
     width: auto;
     height: 70px;
@@ -53,12 +54,12 @@ dt:hover::after {
 
 #t1 {
     background-image: "../misc/images/background.png";
-    background: linear-gradient(to right, rgba(173, 0, 0, 0.9), rgba(0, 0, 0, 0.123));
+    background: linear-gradient(to right, rgba(100, 0, 0, 0.9), rgba(0, 0, 0, 0.123));
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-family: comfortaa;
 
     margin-top: 0px
 }
