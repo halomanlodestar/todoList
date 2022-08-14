@@ -1,44 +1,82 @@
 body {
+    background-image: url("../misc/images/background.png");
+    background-size: 100%;
     /*background: linear-gradient(to right, #20A4F3    , #2234AE);*/
-    background-color: bisque;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background: linear-gradient(to bottom right, #733391, #1a0125); */
     margin: 0px;
 }
 
 dt {
     font-family: consolas;
     font-size: 25px;
-    background-color: red;
-    border-radius: 15px;
+    color: rgba(240, 248, 255, 0.902);
+    background: linear-gradient(to right,rgba(0, 128, 0, 0.9), rgba(0, 0, 0, 0.123));
+    border-radius: 3px;
 
     width: auto;
-    height: 100px;
+    height: 70px;
 
-    margin: 20px;
+    margin: 15px;
 
     padding-left: 15px;
-    padding-top: 1px;
+    padding-top: 10px;
+}
+
+dt:hover {
+    transition: transform 350ms ease;
+    transform: scale(1.03);
+}
+
+dt:hover::after {
+    transition: transform 600ms ease;
+    transform-origin: 0%;
+    transform: scale(0);
+}
+
+.taskBtn {
+    border: outset;
+    font-size: 25px;
+    border-radius: 5px;
+    border-color: rgb(226, 43, 226);
+    color: rgb(226, 43, 223);
+
+    width: 35px;
+    height: 35px;
+
+    position: relative;
+
+    left: 90%;
+    top: -60px;
+
+    background: transparent
+}
+
+#t1 {
+    background-image: "../misc/images/background.png";
+    background: linear-gradient(to right, rgba(173, 0, 0, 0.9), rgba(0, 0, 0, 0.123));
 }
 
 p {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+
+    margin-top: 0px
 }
 
 #title {
     font-family: cursive;
-    font-size: 30px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
     color: aliceblue;
 
     width: auto;
     height: 0px;
 
     padding-top: 10px;
+    padding-left: 20px;
     padding-bottom: 60px;
 
-    background: linear-gradient(black, rgb(63, 63, 63));
+    background: linear-gradient(black, rgba(0, 0, 0, 0.046));
 }
 
 #SideMenu {
@@ -48,7 +86,7 @@ p {
     height: 490px;
     
     left: 77%;
-    top: 22px;
+    top: 20px;
 }
 
 #userInfoTitle {
@@ -80,11 +118,18 @@ p {
 
 #lineT {
     color: aliceblue;
+    border-bottom: solid;
+    border-width: 2px;
+
+    height: 20px;
+    width: 94%;
 
     position: relative;
 
-    top: -30px;
-    left: 3%;
+    top: -25px;
+    left: -3%;
+
+    float: right;
 }
  
 #LoginMenu {
@@ -98,11 +143,12 @@ p {
 
 #ListArea {
     display: flexbox;
-    width: 73.5%;
-    height: 490px;
-    float: right;;
+    float: right;
 
-    left: -25%;
+    width: 63.5%;
+    height: 485px;
+
+    left: -30%;
     top: 20px;
 
     padding: 0px;
@@ -118,14 +164,18 @@ p {
 }
 
 .menus {
-    border-radius: 20px;
-
+    border-radius: 3px;
+    border: groove;
+    border-width: 2px;
+    border-color: rgba(202, 0, 67, 0.24);
+    
     position: relative;
-
-    background: rgba(44, 44, 44, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: saturate(180%) blur(11px);
 }
 
 .inputField {
+    color: cornsilk;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
     border: none;
@@ -172,12 +222,13 @@ p {
 }
 
 .outField:focus-within:after {
+    transform: scaleX(1);
     background: linear-gradient(to left, rgb(64, 245, 164), rgb(9, 228, 240));
 }
 
 .inputLabel {
     z-index: -1;
-    color: rgb(255, 12, 12);
+    color: rgb(255, 122, 122);
     font-family: 'Comfortaa', cursive;
 
     position: absolute;
@@ -207,7 +258,7 @@ p {
 }
 
 #email:valid {
-    color: rgb(113, 225, 0);
+    color: '';
 }
 
 #email:invalid {
@@ -226,20 +277,24 @@ p {
     left: 13%;
     top: 25px;
 
-    transition: background 10000ms;
-    background: linear-gradient(to left, aqua, seagreen);
+    background-color: aqua;
 
+    transition: background 2s;
 }
 
 #submit:hover {
-    background: linear-gradient(to right, aqua, seagreen);
+    background-color: rgb(14, 219, 14);
 }
 
 #alterLink {
+    font-family: 'Titillium Web';
+    color: darkgray;
+    font-size: 15px;
+
     position: relative;
 
     bottom: -50px;
-    left: 10%;
+    left: 13%;
 }
 
 .links {

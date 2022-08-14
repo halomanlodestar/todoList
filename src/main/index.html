@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="icon" href="../misc/icons/webIcon.png">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Titillium+Web&display=swap" rel="stylesheet">
@@ -11,18 +12,19 @@
     <title>Todo List</title>
 </head>
 <body>
-    <div id="title">todoDeck_</div>
+    <div id="title">todoDeck.net_</div>
 
-    <div id="ListArea" class="menus">
+    <form id="ListArea" class="menus">
         <h1 class="subTitles" id="taskTitle">TODOs</h1>
-        <h2 id="lineT"> _________________________________________________________________________ </h2>
+        <button id="addTask" class="taskBtn"> + </button>
+        <div id="lineT"></div>
         <dl id="tasks">
             <dt>Task A <p>
                 dwa
             </p></dt>
-            <dt> Task B</dt>
+            <dt id="t1"> Task B</dt>
         </dl>
-    </div>
+    </form>
     <div id="SideMenu" class="menus">
         <h1 id="userInfoTitle" class="subTitles">User Info.</h1>
         <h2 id="line"> ___________________ </h2>
