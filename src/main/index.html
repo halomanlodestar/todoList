@@ -3,10 +3,8 @@
 <head>
 
     <link rel="icon" href="../misc/icons/webIcon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Teko&family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Space+Grotesk&family=Teko&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe:ital@0;1&family=Comfortaa&family=Space+Grotesk&family=Teko&family=Titillium+Web&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styel.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +14,40 @@
 <body>
     <div id="title">todoDeck.net_</div>
 
-    <form id="ListArea" class="menus">
+    <div id="ListArea" class="menus">
         <h1 class="subTitles" id="taskTitle">TODOs</h1>
         <button id="addTask" class="taskBtn"> + </button>
         <div id="lineT"></div>
         <dl id="tasks">
-            <dt>Task A <p>
-                dwa
-            </p></dt>
-            <dt> Task B</dt>
-            <dt id="t1"> Task C</dt>
+            <dt id="t1">Find new fonts
+                <p class="desc">
+                    The TODOs and User Info font is awful imo.
+                </p>
+                <div id="dividor">
+                    <p title="Time" class="taskInfo">⏱:45min</p>
+                    <p class="taskInfo">🔰:High</p>
+                </div>
+            </dt>
+            <dt> Get a color palette
+                <p class="desc">
+                Find a nice and cozy color palette (Navy Blue)
+                </p>
+                <div id="dividor">
+                    <p title="Time" class="taskInfo">⏱:40min</p>
+                    <p class="taskInfo">🔰:Low</p>
+                </div>
+            </dt>
+            <dt> Re-structure Ui
+                <p class="desc">
+                    DO IT!!! cuz this one sux
+                </p>
+                <div id="dividor">   
+                    <p title="Time" class="taskInfo">⏱:5h</p>
+                    <p class="taskInfo">🔰:Medium</p>
+                </div>
+            </dt>
         </dl>
-    </form>
+    </div>
     <div id="SideMenu" class="menus">
         <h1 id="userInfoTitle" class="subTitles">User Info.</h1>
         <h2 id="line"> ___________________ </h2>
